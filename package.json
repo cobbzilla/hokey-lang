@@ -1,0 +1,54 @@
+{
+  "name": "hokey-lang",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Language constants for hokeylization",
+  "keywords": [
+    "translation",
+    "translate",
+    "language",
+    "localize",
+    "localization",
+    "internationalize",
+    "internationalization",
+    "tool",
+    "hokeylization"
+  ],
+  "homepage": "https://github.com/cobbzilla/hokey-lang",
+  "author": "Jonathan Cobb <udo9jqld@duck.com> (https://github.com/cobbzilla)",
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/cobbzilla"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cobbzilla/hokey-lang.git"
+  },
+  "license": "Apache-2.0",
+  "scripts": {
+    "tsc": "tsc --module es2020 -p tsconfig.json",
+    "lint": "npx eslint src",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "npx prettier src --check",
+    "prettier:fix": "npm run prettier -- --write"
+  },
+  "main": "./lib/esm/index.js",
+  "module": "./lib/esm/index.js",
+  "exports": {
+    ".": "./lib/esm/index.js"
+  },
+  "files": [
+    "lib/"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.4.2",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.44.0",
+    "eslint-config-prettier": "^8.8.0",
+    "hokey-runtime": "^1.0.8",
+    "prettier": "^3.0.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^5.1.6"
+  }
+}
